@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="toolbar">
+    <button mat-icon-button (click)="onToggleSidenav()" class="btn btn-default arrow">
+        <mat-icon class="menu-icon">{{closedNav}}</mat-icon>
+    </button>
+  <a href="#">
+      <img class="logo" src="../../assets/images/logo.png" alt="Logo"/>
+  </a>
+  <span class="example-fill-remaining-space"></span>
+  <mat-nav-list class="toolbar">
+      <mat-list-item *ngFor="let link of links" class="toolbar-list">
+      <button mat-raised-button class="btn btn-default" style="width: 60%;"
+          matTooltip={{link.tooltip}}
+          matTooltipPosition="above"
+          matTooltipClass=""
+          aria-label="">
+          <a matLine href={{link.link}}></a>
+          <mat-icon>
+            {{ link.icon }}
+          </mat-icon>
+          <span *ngIf="link.show_badget" class="badge badge-danger bagde-ring">{{link.show_badget}}</span>
+        </button>
+       </mat-list-item>
+       <button mat-button [matMenuTriggerFor]="belowMenu" matTooltip={{profile}} class="btn btn-default"
+       matTooltipPosition="above"
+       matTooltipClass="">
+        <mat-icon>person</mat-icon>
+       </button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+          <button mat-menu-item *ngFor="let submenu of profileSubmenu" class="f-13" (click)="customAction(submenu.id)">
+            <mat-icon *ngIf="submenu.icon" class="profile-submenu-icons mr-0">{{submenu.icon}}</mat-icon>
+            <i *ngIf="!submenu.icon" [ngClass]="submenu.class" class="mr-2 profile-submenu-icons"></i>
+            {{submenu.tooltip}}
+          </button>
+        </mat-menu>
+   </mat-nav-list>
+</mat-toolbar>

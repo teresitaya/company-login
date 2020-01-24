@@ -1,0 +1,35 @@
+a {
+    display: block;
+    color: #4c4c4c;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+}
+
+a:hover, a:active{
+  color: #262626;
+  background-color: #f4f4f4;
+}
+
+.nav-caption {
+  display: inline-block;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.mat-icon {
+  color: #4c4c4c;
+  position: relative;
+  top: 6px;
+}
+.mat-nav-list{
+  margin-top: 6em;
+}
+.fa-icons {
+  color: #4c4c4c;
+  font-size: 23px;
+}
+
+.custom-labels{
+  margin-left: 0;
+  padding: 0;
+}

@@ -1,0 +1,22 @@
+<app-deployments-menu (closeSideNav)= onSidenavClose()></app-deployments-menu>
+<mat-nav-list>
+    <mat-divider class="mb-4"></mat-divider>
+    <mat-list-item class="mb-2">
+        <a routerLink="/" (click)="onSidenavClose()">
+          <fa name="fas fa-tachometer" class="fa-icons"></fa>
+          <span class="nav-caption ml-1 text-center">{{dashboardLabel}}</span>
+        </a>
+     </mat-list-item>
+     <ng-material-multilevel-menu [configuration]='config' [items]='appitems' (selectedItem)="selectedItem($event)">
+      </ng-material-multilevel-menu>
+     <mat-divider class="mb-4"></mat-divider>
+     <mat-list-item *ngFor="let link of sectionTwoRoutes">
+      <a routerLink={{link.route}} (click)="onSidenavClose()">
+        <mat-icon *ngIf="link.icon">{{link.icon}}</mat-icon>
+        <fa *ngIf="!link.icon" name={{link.class}} class="fa-icons"></fa>
+        <span class="nav-caption ml-1 text-center">{{link.title}}
+        </span>
+        <span *ngIf="link.show_badget" class="badge badge-danger pull-right mt-2">{{link.show_badget}}</span>
+      </a>
+   </mat-list-item>
+  </mat-nav-list>

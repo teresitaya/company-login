@@ -1,0 +1,101 @@
+.logo {
+  margin: 0 auto;
+}
+input.form-control{
+  display: inline-block;
+}
+.icons {
+  font-size: 24px;
+}
+.form-container {
+  min-height: 490px;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none;
+}
+.form-control:focus{
+  border-color: #fff;
+}
+
+.login-form {
+  position: relative;
+  top: 152px;
+}
+
+@media (min-width: 320px) and (max-width: 359px) {
+  .login-form {
+    position: relative;
+    top: 0;
+   }
+}
+@media (min-width: 360px) and (max-width: 374px) {
+  .login-form {
+    position: relative;
+    top: 5vh;
+   }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .login-form {
+    position: relative;
+    top: 9vh;
+   }
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login-form {
+    position: relative;
+    top: 12vh;
+   }
+}
+@media (min-width: 1281px) {
+  .login-form {
+    position: relative;
+    top: 24vh;
+   }
+}
+.omb_loginOr {
+  position: relative;
+  color: #aaa;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.omb_hrOr {
+  height: 1px;
+}
+.omb_spanOr {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  margin-left: -1.5em;
+  background-color: white;
+  width: 3em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login-lg {
+  padding: 0;
+}
+.btn-google {
+  background-color: #4285f4;
+  color: #fff;
+}
+.google-logo {
+  background: #fff;
+  border: 1px solid #4285f4;
+}
+.btn-social>:first-child {
+  position: absolute;
+  left: 20px;
+  top: 488px;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  line-height: 29px;
+  font-size: 1.6em;
+  text-align: center;
+  border-right: 1px solid rgba(0,0,0,0.2);
+}

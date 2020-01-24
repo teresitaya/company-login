@@ -1,0 +1,18 @@
+    <mat-sidenav-container *ngIf="currentUser">
+      <mat-sidenav #sidenav role="navigation" (closedStart)="onSidenavClose()">
+        <app-itopia-side-nav (sidenavClose)="sidenav.close()"></app-itopia-side-nav>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <app-itopia-toolbar (sidenavToggle)="sidenav.toggle()" [closedNav]= "closedNavParent"></app-itopia-toolbar>
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+
+<!-- main app container -->
+<div class="container login" *ngIf="!currentUser">
+  <router-outlet></router-outlet>
+</div>
+

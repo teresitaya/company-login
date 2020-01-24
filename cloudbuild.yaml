@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install', 'firebase-cli']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['install']
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['run', 'build']
+- name: 'gcr.io/dev-by-maria-1/firebase'
+  args: [ 'deploy', '--project', dev-by-maria-1, '--token', '${_TOKEN}']
+timeout: "1600s"

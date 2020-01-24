@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { margin: 0; height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #5e5e5e;
+  background-color: #edecec;
+}
+.mat-nav-list .mat-list-item {
+  font-size: 14px;
+  font-weight: 500;
+}
+span.label {
+  margin-left: -7px;
+}
+.amml-icon-fa{
+  font-size: 26px !important;
+}
+.badge-danger {
+  background-color: red;
+  font-weight: 400;
+}
+.mat-list-item-content{
+padding: 0 3px !important;
+}
+
+.form-control, .btn, .card {
+border-radius: 0;
+}
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+  padding: 0;
+}
+.w-90 {
+  width: 90%;
+}
+input.form-control.is-invalid,.invalid-feedback{
+  color: red;
+}
+.btn {
+  font-size: 13px;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.f-13 {
+  font-size: 13px;
+}
+.f-17 {
+  font-size: 17px;
+}
+.mat-menu-panel {
+  border-radius: 0 !important;
+}
+.c-orange {
+  color: #ff9800;
+}
+.c-green {
+  color: #4caf50;
+}

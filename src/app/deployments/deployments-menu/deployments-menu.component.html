@@ -1,0 +1,8 @@
+<mat-nav-list>
+<mat-list-item *ngFor="let deployment of deployments" class="deployment-menu" (click)="setDeploymentSelected(deployment)">
+    <mat-icon fontSet="material-icons-outlined" *ngIf="isInProgress(deployment.status)" class="f-17 mt-7px">fiber_manual_record</mat-icon>
+    <mat-icon  [ngClass]="getDeploymentStatus(deployment.status)" *ngIf="!isInProgress(deployment.status)" class="f-17 mt-7px">fiber_manual_record</mat-icon>
+   {{deployment.name}}
+</mat-list-item>
+</mat-nav-list>
+

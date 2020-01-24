@@ -1,0 +1,37 @@
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}
+.logo {
+  height: 30px;
+  width: auto;
+}
+.toolbar{
+  background-color: #2196f3;
+  display: inline-flex;
+}
+.toolbar-list {
+  list-style: none;
+  padding: 0;
+}
+.menu-icon {
+  margin-top: 6px;
+  }
+  .mat-icon{
+    color: #fff;
+  }
+.bagde-ring {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+}
+.arrow {
+  padding: 0;
+  margin-left: -12px;
+  margin-right: 15px;
+}
+.profile-submenu-icons {
+  color:#5e5e5e;
+  font-size: 18px;
+}
