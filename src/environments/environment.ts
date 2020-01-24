@@ -3,15 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: 'https://cas-rest-dev.azurewebsites.net/api/v2/',
+  production: true,
+  apiUrl: 'https://mock-server.com/api/',
   firebaseConfig: {
-    apiKey: "AIzaSyA9D0wqpfmRzla3SVpi_Rp2SICAreRSGnI",
-    authDomain: "dev-by-alpha-1.firebaseapp.com",
-    databaseURL: "https://dev-by-alpha-1.firebaseio.com",
-    projectId: "dev-by-alpha-1",
-    storageBucket: "dev-by-alpha-1.appspot.com",
-    messagingSenderId: "111589951704"
   }
 };
 
